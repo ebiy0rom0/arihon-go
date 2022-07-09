@@ -31,7 +31,7 @@ func TestCalc(t *testing.T) {
 }
 
 func BenchmarkCalc(b *testing.B) {
-	lines := util.MakeRandomSlice(1, int(math.Pow10(6)), int(math.Pow10(6)))
+	lines := util.MakeRandomSlice(1, int(math.Pow10(6)), 100)
 
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
