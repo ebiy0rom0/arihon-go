@@ -16,7 +16,7 @@ func MakeRandom(min, max, needs int) []int {
 	rand.Seed(time.Now().UnixMicro())
 
 	picked := make(map[int]bool)
-	for i, limiter := 0, 0; i < needs; i++ {
+	for i, limiter := 0, 0; i < needs; {
 		n := rand.Intn(nRange) + min
 		if !picked[n] {
 			picked[n] = true
