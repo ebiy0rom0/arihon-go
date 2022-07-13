@@ -16,7 +16,10 @@ func Calc(n, m int, k []int) bool {
 		}
 	}
 
-	for kk := range stack {
+	for _, kk := range stack {
+		if m-kk > m {
+			return false
+		}
 		if util.BinarySearch(m-kk, stack) {
 			return true
 		}

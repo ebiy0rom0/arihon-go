@@ -20,7 +20,7 @@ func TestCalc(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{name: "simple", args: args{n: 3, m: 10, k: []int{1, 3, 5}}, want: true},
-		// {name: "no answer", args: args{n: 3, m: 9, k: []int{1, 3, 5}}, want: false},
+		{name: "no answer", args: args{n: 3, m: 9, k: []int{1, 3, 5}}, want: false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
