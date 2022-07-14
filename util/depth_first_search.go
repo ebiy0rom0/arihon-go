@@ -1,7 +1,5 @@
 package util
 
-import "fmt"
-
 var items []int
 var length int
 var want int
@@ -15,7 +13,6 @@ func DepthFirstSerach(w int, s []int) bool {
 }
 
 func depthFirstSearch(i, sum int) bool {
-	fmt.Printf("i: %d, sum: %d\n", i, sum)
 	if i == length {
 		return sum == want
 	}

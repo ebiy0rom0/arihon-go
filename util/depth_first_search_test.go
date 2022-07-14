@@ -21,7 +21,7 @@ func TestDepthFirstSerach(t *testing.T) {
 		{name: "no answer", args: args{w: 15, s: []int{1, 2, 4, 7}}, want: false},
 		{name: "include minus", args: args{w: 7, s: []int{-5, -1, 3, 9}}, want: true},
 		{name: "no answer minus", args: args{w: 5, s: []int{-5, -1, 3, 9}}, want: false},
-		{name: "multi answers", args: args{w: 3, s: []int{-5, -1, 3, 9}}, want: false},
+		{name: "multi answers", args: args{w: 3, s: []int{-5, -1, 3, 9}}, want: true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
